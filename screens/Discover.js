@@ -1,21 +1,14 @@
-import {
-  View,
-  ScrollView,
-  StyleSheet,
-  Text,
-  Image,
-  Pressable,
-} from "react-native";
+import { View, ScrollView, StyleSheet, Text, Image } from "react-native";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { BACKEND, UserContext } from "../App";
+import { BACKEND } from "../App";
 import Nav from "../components/Nav";
 import DiscoverWord from "../components/DiscoverWord";
 import { useAuth } from "../context/AuthContext";
 import Logout from "../components/Logout";
 
 export default function Discover() {
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
   const [words, setWords] = useState(null);
 
   useEffect(() => {
@@ -58,11 +51,12 @@ const styles = StyleSheet.create({
   },
   wordsContainer: {
     flex: 1,
+    paddingVertical: 80,
     backgroundColor: "#ddd",
   },
   contentContainer: {
     alignItems: "center",
-    padding: 40,
+    paddingHorizontal: 40,
     gap: 20,
   },
 });

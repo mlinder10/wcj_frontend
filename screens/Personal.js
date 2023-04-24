@@ -41,11 +41,12 @@ const styles = StyleSheet.create({
   },
   wordsContainer: {
     flex: 1,
-    padding: 40,
+    paddingHorizontal: 40,
     backgroundColor: "#ddd",
   },
   contentContainer: {
     alignItems: "center",
     gap: 20,
+    paddingVertical: 80,
   },
 });

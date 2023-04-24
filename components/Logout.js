@@ -19,8 +19,8 @@ export default function Logout() {
 const styles = StyleSheet.create({
   container: {
     position: "absolute",
-    top: 20,
-    left: 40,
+    top: 25,
+    left: 20,
   },
   text: {
     color: "#000",
